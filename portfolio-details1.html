@@ -71,17 +71,19 @@
           </div>
 
           <div class="col-lg-4 portfolio-info">
-            <h3>XYZ</h3>
+            <h3>Cryptographic Shared File System</h3>
             <ul>
-              <li><strong>Category</strong>: Web design</li>
-              <li><strong>Client</strong>: ASU Company</li>
+              <li><strong>Category</strong>: Cryptography</li>
+              <li><strong>Language</strong>: Python, MongoDB</li>
               <li><strong>Project date</strong>: 01 March, 2020</li>
-              <li><strong>Project URL</strong>: <a href="#">www.example.com</a></li>
+              <li><strong>Project URL</strong>: <a href="https://github.com/sruthi1910/crypto-shared-file-sys">CSFS</a></li>
             </ul>
 
             <p>
-              Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-            </p>
+              The filesystem will first break the files into 4 chunks. These 4 chunks will be individually encrypted. Each chunk will have a unique filename which will make it difficult to predict and find the specific file chunk. 
+              While recreating the file, will open chunks one by one and decrypt them using the algorithm. The system will check whether files are accessible or missing. 
+              If few files are missing, it will invoke erasure coding module and try to recreate the content while also informing the user that the file has been tampered. 
+              After decrypting and recreating missing chunks (if necessary), again create a Merkle tree compare the Merkle root from the MongoDB. This will give the user the proof whether the file has been tampered or not. 
           </div>
 
         </div>
@@ -96,7 +98,7 @@
     <!-- You can delete the links only if you purchased the pro version. -->
     <!-- Licensing information: https://bootstrapmade.com/license/ -->
     <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/personal-free-resume-bootstrap-template/ -->
-    Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+     <a href="#"></a>
   </div>
 
   <!-- Vendor JS Files -->
